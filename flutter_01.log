@@ -1,0 +1,227 @@
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './src/reducers';
+import App from './App';
+
+const store = createStore(rootReducer);
+
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './src/reducers';
+import App from './App';
+
+const store = createStore(rootReducer);
+
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
+
+source ~/.zshrc
+
+export PATH="$PATH:/path/to/flutter/bin";
+
+/**
+ * Metro configuration for React Native
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
+
+module.exports = {
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: false,
+      },
+    }),
+  },
+};
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './src/reducers';
+import App from './App';
+
+const store = createStore(rootReducer);
+
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
+
+flutter run
+
+/**
+ * Metro configuration for React Native
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
+
+module.exports = {
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: false,
+      },
+    }),
+  },
+};
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './src/reducers';
+import App from './App';
+
+const store = createStore(rootReducer);
+
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
+
+## flutter doctor
+
+/**
+ * Metro configuration for React Native
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
+
+module.exports = {
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: false,
+      },
+    }),
+  },
+};
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './src/reducers';
+import App from './App';
+
+const store = createStore(rootReducer);
+
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
+
+## flutter doctor
+
+
+```
+/**
+ * Metro configuration for React Native
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ */
+
+module.exports = {
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: false,
+      },
+    }),
+  },
+};
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './src/reducers';
+import App from './App';
+
+const store = createStore(rootReducer);
+
+const Root = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default Root;
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.0.3, on Ubuntu 22.04.1 LTS 5.15.0-48-generic, locale en_US.UTF-8)
+    • Flutter version 3.0.3 at /home/marko/snap/flutter/common/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 676cefaaff (4 months ago), 2022-06-22 11:34:49 -0700
+    • Engine revision ffe7b86a1e
+    • Dart version 2.17.5
+    • DevTools version 2.12.2
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
+    • Android SDK at /home/marko/Android/Sdk
+    • Platform android-33, build-tools 33.0.0
+    • Java binary at: /snap/android-studio/124/android-studio/jre/bin/java
+    • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at google-chrome
+
+[✓] Linux toolchain - develop for Linux desktop
+    • clang version 6.0.0-1ubuntu2 (tags/RELEASE_600/final)
+    • cmake version 3.10.2
+    • ninja version 1.8.2
+    • pkg-config version 0.29.1
+
+[✓] Android Studio (version 2021.3)
+    • Android Studio at /snap/android-studio/124/android-studio
+    • Flutter plugin version 70.2.3
+    • Dart plugin version 213.7433
+    • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
+
+[✓] Android Studio (version 2021.2)
+    • Android Studio at /snap/android-studio/123/android-studio
+    • Flutter plugin version 68.1.2
+    • Dart plugin version 212.5744
+    • Java version OpenJDK Runtime Environment (build 11.0.12+0-b1504.28-7817840)
+
+[✓] VS Code
+    • VS Code at /snap/code/current
+    • Flutter extension can be installed from:
+      🔨 https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected device (1 available)
+    • Chrome (web) • chrome • web-javascript • Google Chrome 106.0.5249.91
+
+[✓] HTTP Host Availability
+    • All required HTTP hosts are available
+
+• No issues found!
+```

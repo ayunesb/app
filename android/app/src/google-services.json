@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1059012195244",
+    "project_id": "paradigm-mx",
+    "storage_bucket": "paradigm-mx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059012195244:android:e75da62d528f48a8e48009",
+        "android_client_info": {
+          "package_name": "com.paradigmmex.paradigm_mex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059012195244-rkj7oflmmv2a86v60ttl78kd6pjdsbr3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpsLVg0FaX-b7Jz7GP3_sQUrJcrnumxTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059012195244-rkj7oflmmv2a86v60ttl78kd6pjdsbr3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1059012195244-c5dkc5s7qi9a4ren5u1t8bcivi6c0p0m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.paradigmmex.paradigm-mex",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

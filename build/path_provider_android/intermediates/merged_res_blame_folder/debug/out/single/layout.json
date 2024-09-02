@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/marko/clients/hunt-mx/dev/mobileapp/build/path_provider_android/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/home/marko/.gradle/caches/transforms-3/08c27a209f593516d1ea9af3372380a9/transformed/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/marko/clients/hunt-mx/dev/mobileapp/build/path_provider_android/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/home/marko/.gradle/caches/transforms-3/08c27a209f593516d1ea9af3372380a9/transformed/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/marko/clients/hunt-mx/dev/mobileapp/build/path_provider_android/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/marko/.gradle/caches/transforms-3/08c27a209f593516d1ea9af3372380a9/transformed/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/marko/clients/hunt-mx/dev/mobileapp/build/path_provider_android/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/home/marko/.gradle/caches/transforms-3/08c27a209f593516d1ea9af3372380a9/transformed/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/marko/clients/hunt-mx/dev/mobileapp/build/path_provider_android/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/marko/.gradle/caches/transforms-3/08c27a209f593516d1ea9af3372380a9/transformed/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/marko/clients/hunt-mx/dev/mobileapp/build/path_provider_android/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/home/marko/.gradle/caches/transforms-3/08c27a209f593516d1ea9af3372380a9/transformed/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    }
+]

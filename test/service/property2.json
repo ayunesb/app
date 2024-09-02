@@ -1,0 +1,39 @@
+{
+  "amenities": [
+    "Swimming Pool",
+    "Patio",
+    "Gym"
+  ],
+  "country": "MX",
+  "location": {
+    "latitude": -87.124568,
+    "longitude": 20.248153
+  },
+  "groupId": "1",
+  "postalCode": "77760",
+  "houseNumber": "58",
+  "currentPrice": 104435,
+  "bathrooms": 1,
+  "type": "Studio",
+  "ownerId": "42",
+  "colonia": "",
+  "meters": 476.97,
+  "esDescription": "Despierta en el corazón de la Riviera Maya, recorre los paisajes tropicales de arena blanca, conecta con culturas ancestrales, diviértete todos los días, disfruta todas las noches.",
+  "bedrooms": 0,
+  "createdAt": {
+    "seconds": 1642515802,
+    "nanoseconds": 0
+  },
+  "deleted": true,
+  "province": "Quintana Roo",
+  "streetAddress": "Av. Quinta",
+  "enDescription": "Wake up in the heart of the Mayan Riviera, walk the tropical white sand beaches, discover ancient cultures, enjoy every day, have fun every night.",
+  "previousPrice": 124435,
+  "id": "ITCtnevousqaMsSagiee",
+  "village": "Tulum",
+  "updatedAt": {
+    "seconds": 1642606950,
+    "nanoseconds": 0
+  },
+  "status": "Available"
+}

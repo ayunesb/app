@@ -1,0 +1,618 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.paradigmmex.paradigm_mex"
+4    android:versionCode="33"
+5    android:versionName="2.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml
+10
+11    <!--
+12      The INTERNET permission is required for development. Specifically,
+13      flutter needs it to communicate with the running application
+14      to allow setting breakpoints, to provide hot reload, etc.
+15    -->
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:10:5-67
+16-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:10:22-64
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:11:5-77
+17-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:11:22-74
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:12:5-81
+18-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:13:5-79
+19-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:13:22-76
+20
+21    <queries>
+21-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:18:5-31:15
+22        <intent>
+22-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:19:9-22:18
+23            <action android:name="android.intent.action.VIEW" />
+23-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:13-65
+23-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:21-62
+24
+25            <data android:scheme="https" />
+25-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+25-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+26        </intent>
+27        <intent>
+27-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:23:9-26:18
+28            <action android:name="android.intent.action.DIAL" />
+28-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:24:13-65
+28-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:24:21-62
+29
+30            <data android:scheme="tel" />
+30-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+30-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+31        </intent>
+32        <intent>
+32-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:27:9-30:18
+33            <action android:name="android.intent.action.SEND" />
+33-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:28:13-65
+33-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:28:21-62
+34
+35            <data android:mimeType="*/*" />
+35-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+35-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:29:19-41
+36        </intent>
+37        <intent>
+37-->[:file_picker] /home/marko/clients/hunt-mx/dev/mobileapp/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:9-14:18
+38            <action android:name="android.intent.action.GET_CONTENT" />
+38-->[:file_picker] /home/marko/clients/hunt-mx/dev/mobileapp/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:13-72
+38-->[:file_picker] /home/marko/clients/hunt-mx/dev/mobileapp/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:21-69
+39
+40            <data android:mimeType="*/*" />
+40-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+40-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:29:19-41
+41        </intent>
+42
+43        <package android:name="com.google.android.apps.maps" />
+43-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:8:9-64
+43-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:8:18-61
+44        <package android:name="com.google.android.apps.mapslite" />
+44-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:9:9-68
+44-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:9:18-65
+45        <package android:name="com.autonavi.minimap" />
+45-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:10:9-56
+45-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:10:18-53
+46        <package android:name="com.baidu.BaiduMap" />
+46-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:11:9-54
+46-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:11:18-51
+47        <package android:name="com.waze" />
+47-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:12:9-44
+47-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:12:18-41
+48        <package android:name="ru.yandex.yandexnavi" />
+48-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:13:9-56
+48-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:13:18-53
+49        <package android:name="ru.yandex.yandexmaps" />
+49-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:14:9-56
+49-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:14:18-53
+50        <package android:name="com.citymapper.app.release" />
+50-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:15:9-62
+50-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:15:18-59
+51        <package android:name="com.mapswithme.maps.pro" />
+51-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:16:9-59
+51-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:16:18-56
+52        <package android:name="net.osmand" />
+52-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:17:9-46
+52-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:17:18-43
+53        <package android:name="net.osmand.plus" />
+53-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:18:9-51
+53-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:18:18-48
+54        <package android:name="ru.dublgis.dgismobile" />
+54-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:19:9-57
+54-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:19:18-54
+55        <package android:name="com.tencent.map" />
+55-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:20:9-51
+55-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:20:18-48
+56        <package android:name="com.here.app.maps" />
+56-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:21:9-53
+56-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:21:18-50
+57        <package android:name="com.huawei.maps.app" />
+57-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:22:9-55
+57-->[:map_launcher] /home/marko/clients/hunt-mx/dev/mobileapp/build/map_launcher/intermediates/library_manifest/release/AndroidManifest.xml:22:18-52
+58    </queries>
+59    <!-- Provide required visibility configuration for API level 30 and above -->
+60    <queries>
+60-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:18:5-31:15
+61        <intent>
+61-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:19:9-22:18
+62            <action android:name="android.intent.action.VIEW" />
+62-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:13-65
+62-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:21-62
+63
+64            <data android:scheme="https" />
+64-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+64-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+65        </intent>
+66        <intent>
+66-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:23:9-26:18
+67            <action android:name="android.intent.action.DIAL" />
+67-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:24:13-65
+67-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:24:21-62
+68
+69            <data android:scheme="tel" />
+69-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+69-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+70        </intent>
+71        <intent>
+71-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:42:9-45:18
+72            <action android:name="android.intent.action.SENDTO" />
+72-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:43:13-67
+72-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:43:21-64
+73
+74            <data android:scheme="smsto" />
+74-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+74-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+75        </intent>
+76    </queries>
+77
+78    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+78-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:7:5-79
+78-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:7:22-76
+79    <uses-permission android:name="android.permission.WAKE_LOCK" />
+79-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:9:5-68
+79-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:9:22-65
+80    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+80-->[:file_picker] /home/marko/clients/hunt-mx/dev/mobileapp/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
+80-->[:file_picker] /home/marko/clients/hunt-mx/dev/mobileapp/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
+81
+82    <uses-feature
+82-->[com.google.android.gms:play-services-maps:18.1.0] /home/marko/.gradle/caches/transforms-3/37e485d5cb9464fbcfa9d4cf10302f4f/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+83        android:glEsVersion="0x00020000"
+83-->[com.google.android.gms:play-services-maps:18.1.0] /home/marko/.gradle/caches/transforms-3/37e485d5cb9464fbcfa9d4cf10302f4f/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+84        android:required="true" />
+84-->[com.google.android.gms:play-services-maps:18.1.0] /home/marko/.gradle/caches/transforms-3/37e485d5cb9464fbcfa9d4cf10302f4f/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+85
+86    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+86-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:26:5-110
+86-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:26:22-107
+87
+88    <permission
+88-->[androidx.core:core:1.9.0] /home/marko/.gradle/caches/transforms-3/4bfc410cfdcc3f82190e9f83243a8ec7/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+89        android:name="com.paradigmmex.paradigm_mex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+89-->[androidx.core:core:1.9.0] /home/marko/.gradle/caches/transforms-3/4bfc410cfdcc3f82190e9f83243a8ec7/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+90        android:protectionLevel="signature" />
+90-->[androidx.core:core:1.9.0] /home/marko/.gradle/caches/transforms-3/4bfc410cfdcc3f82190e9f83243a8ec7/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+91
+92    <uses-permission android:name="com.paradigmmex.paradigm_mex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+92-->[androidx.core:core:1.9.0] /home/marko/.gradle/caches/transforms-3/4bfc410cfdcc3f82190e9f83243a8ec7/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+92-->[androidx.core:core:1.9.0] /home/marko/.gradle/caches/transforms-3/4bfc410cfdcc3f82190e9f83243a8ec7/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+93
+94    <application
+95        android:name="android.app.Application"
+95-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:50:9-42
+96        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+96-->[androidx.core:core:1.9.0] /home/marko/.gradle/caches/transforms-3/4bfc410cfdcc3f82190e9f83243a8ec7/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+97        android:icon="@mipmap/ic_launcher"
+97-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:51:9-43
+98        android:label="Hunt MX" >
+98-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:52:9-32
+99        <activity
+99-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:53:9-101:20
+100            android:name="com.paradigmmex.paradigm_mex.MainActivity"
+100-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:54:13-41
+101            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+101-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:55:13-163
+102            android:exported="true"
+102-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:56:13-36
+103            android:hardwareAccelerated="true"
+103-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:57:13-47
+104            android:launchMode="singleTop"
+104-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:58:13-43
+105            android:theme="@style/LaunchTheme"
+105-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:59:13-47
+106            android:windowSoftInputMode="adjustResize" >
+106-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:60:13-55
+107
+108            <!--
+109                 Specifies an Android theme to apply to this Activity as soon as
+110                 the Android process has started. This theme is visible to the user
+111                 while the Flutter UI initializes. After that, this theme continues
+112                 to determine the Window background behind the Flutter UI.
+113            -->
+114
+115            <meta-data
+115-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:66:13-68:57
+116                android:name="io.flutter.embedding.android.NormalTheme"
+116-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:67:17-72
+117                android:resource="@style/NormalTheme" />
+117-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:68:17-54
+118
+119            <intent-filter>
+119-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:69:13-72:29
+120                <action android:name="android.intent.action.MAIN" />
+120-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:70:17-69
+120-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:70:25-66
+121
+122                <category android:name="android.intent.category.LAUNCHER" />
+122-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:71:17-77
+122-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:71:27-74
+123            </intent-filter>
+124            <!-- Deep linking -->
+125            <meta-data
+125-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:74:13-76:40
+126                android:name="flutter_deeplinking_enabled"
+126-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:75:17-59
+127                android:value="true" />
+127-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:76:17-37
+128
+129            <intent-filter>
+129-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:78:13-88:29
+130                <action android:name="android.intent.action.VIEW" />
+130-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:13-65
+130-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:21-62
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:17-76
+132-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:27-73
+133                <category android:name="android.intent.category.BROWSABLE" />
+133-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:17-78
+133-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:27-75
+134
+135                <data
+135-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+136                    android:host="paradigm-mx.web.app"
+136-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:86:21-55
+137                    android:path="/property"
+137-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:87:21-45
+138                    android:scheme="http" />
+138-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+139            </intent-filter>
+140            <intent-filter>
+140-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:89:13-99:29
+141                <action android:name="android.intent.action.VIEW" />
+141-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:13-65
+141-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:21-62
+142
+143                <category android:name="android.intent.category.DEFAULT" />
+143-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:17-76
+143-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:27-73
+144                <category android:name="android.intent.category.BROWSABLE" />
+144-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:17-78
+144-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:27-75
+145
+146                <data
+146-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+147                    android:host="paradigm-mx.web.app"
+147-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:86:21-55
+148                    android:path="//property"
+148-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:87:21-45
+149                    android:scheme="https" />
+149-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+150            </intent-filter>
+151        </activity>
+152        <!--
+153             Don't delete the meta-data below.
+154             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+155        -->
+156        <meta-data
+156-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:104:9-106:33
+157            android:name="flutterEmbedding"
+157-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:105:13-44
+158            android:value="2" />
+158-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:106:13-30
+159        <meta-data
+159-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:107:9-109:71
+160            android:name="com.google.android.geo.API_KEY"
+160-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:108:13-58
+161            android:value="AIzaSyB5nXvZ_RY79lVrEt7QxL8AnfHUtxIXwE4" />
+161-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:109:13-68
+162
+163        <service
+163-->[:cloud_firestore] /home/marko/clients/hunt-mx/dev/mobileapp/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+164            android:name="com.google.firebase.components.ComponentDiscoveryService"
+164-->[:cloud_firestore] /home/marko/clients/hunt-mx/dev/mobileapp/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+165            android:directBootAware="true"
+165-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:34:13-43
+166            android:exported="false" >
+166-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /home/marko/.gradle/caches/transforms-3/09a1b198adb5bc0858d0fe4dd1a053bd/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:10:13-37
+167            <meta-data
+167-->[:cloud_firestore] /home/marko/clients/hunt-mx/dev/mobileapp/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+168                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+168-->[:cloud_firestore] /home/marko/clients/hunt-mx/dev/mobileapp/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:10:17-134
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[:cloud_firestore] /home/marko/clients/hunt-mx/dev/mobileapp/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+170            <meta-data
+170-->[:firebase_dynamic_links] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_dynamic_links/intermediates/library_manifest/release/AndroidManifest.xml:11:13-13:85
+171                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+171-->[:firebase_dynamic_links] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_dynamic_links/intermediates/library_manifest/release/AndroidManifest.xml:12:17-131
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[:firebase_dynamic_links] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_dynamic_links/intermediates/library_manifest/release/AndroidManifest.xml:13:17-82
+173            <meta-data
+173-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:85
+174                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+174-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:14:17-128
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[:firebase_analytics] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:15:17-82
+176            <meta-data
+176-->[:firebase_auth] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+177                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+177-->[:firebase_auth] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[:firebase_auth] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+179            <meta-data
+179-->[:firebase_storage] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+180                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+180-->[:firebase_storage] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:10:17-126
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[:firebase_storage] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+182            <meta-data
+182-->[:firebase_core] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+183                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+183-->[:firebase_core] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[:firebase_core] /home/marko/clients/hunt-mx/dev/mobileapp/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /home/marko/.gradle/caches/transforms-3/09a1b198adb5bc0858d0fe4dd1a053bd/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:11:13-13:85
+186                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+186-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /home/marko/.gradle/caches/transforms-3/09a1b198adb5bc0858d0fe4dd1a053bd/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:12:17-126
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /home/marko/.gradle/caches/transforms-3/09a1b198adb5bc0858d0fe4dd1a053bd/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:13:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-common-ktx:20.3.2] /home/marko/.gradle/caches/transforms-3/6bfc291ed77e709e4d4bf614c9a6570f/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:14:13-16:85
+189                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+189-->[com.google.firebase:firebase-common-ktx:20.3.2] /home/marko/.gradle/caches/transforms-3/6bfc291ed77e709e4d4bf614c9a6570f/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:15:17-113
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-common-ktx:20.3.2] /home/marko/.gradle/caches/transforms-3/6bfc291ed77e709e4d4bf614c9a6570f/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:16:17-82
+191            <meta-data
+191-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:69:13-71:85
+192                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+192-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:70:17-109
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:71:17-82
+194            <meta-data
+194-->[com.google.firebase:firebase-firestore:24.6.0] /home/marko/.gradle/caches/transforms-3/a2fb937f7f7c3edacb757f319c96edb6/transformed/jetified-firebase-firestore-24.6.0/AndroidManifest.xml:19:13-21:85
+195                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+195-->[com.google.firebase:firebase-firestore:24.6.0] /home/marko/.gradle/caches/transforms-3/a2fb937f7f7c3edacb757f319c96edb6/transformed/jetified-firebase-firestore-24.6.0/AndroidManifest.xml:20:17-111
+196                android:value="com.google.firebase.components.ComponentRegistrar" />
+196-->[com.google.firebase:firebase-firestore:24.6.0] /home/marko/.gradle/caches/transforms-3/a2fb937f7f7c3edacb757f319c96edb6/transformed/jetified-firebase-firestore-24.6.0/AndroidManifest.xml:21:17-82
+197            <meta-data
+197-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/marko/.gradle/caches/transforms-3/bad06d22c43f72c93dcb1ebfd91dfd94/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
+198                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+198-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/marko/.gradle/caches/transforms-3/bad06d22c43f72c93dcb1ebfd91dfd94/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
+199                android:value="com.google.firebase.components.ComponentRegistrar" />
+199-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/marko/.gradle/caches/transforms-3/bad06d22c43f72c93dcb1ebfd91dfd94/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+200            <meta-data
+200-->[com.google.firebase:firebase-storage:20.2.0] /home/marko/.gradle/caches/transforms-3/68e044eb4684fc6dec515e4941de363b/transformed/jetified-firebase-storage-20.2.0/AndroidManifest.xml:32:13-34:85
+201                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+201-->[com.google.firebase:firebase-storage:20.2.0] /home/marko/.gradle/caches/transforms-3/68e044eb4684fc6dec515e4941de363b/transformed/jetified-firebase-storage-20.2.0/AndroidManifest.xml:33:17-107
+202                android:value="com.google.firebase.components.ComponentRegistrar" />
+202-->[com.google.firebase:firebase-storage:20.2.0] /home/marko/.gradle/caches/transforms-3/68e044eb4684fc6dec515e4941de363b/transformed/jetified-firebase-storage-20.2.0/AndroidManifest.xml:34:17-82
+203            <meta-data
+203-->[com.google.android.gms:play-services-measurement-api:21.2.2] /home/marko/.gradle/caches/transforms-3/fe513d37581f61b67fdaea79a57538be/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:31:13-33:85
+204                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+204-->[com.google.android.gms:play-services-measurement-api:21.2.2] /home/marko/.gradle/caches/transforms-3/fe513d37581f61b67fdaea79a57538be/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:32:17-139
+205                android:value="com.google.firebase.components.ComponentRegistrar" />
+205-->[com.google.android.gms:play-services-measurement-api:21.2.2] /home/marko/.gradle/caches/transforms-3/fe513d37581f61b67fdaea79a57538be/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:33:17-82
+206            <meta-data
+206-->[com.google.firebase:firebase-installations:17.1.3] /home/marko/.gradle/caches/transforms-3/965f55555e7a24fdde33707479ed4945/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:17:13-19:85
+207                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+207-->[com.google.firebase:firebase-installations:17.1.3] /home/marko/.gradle/caches/transforms-3/965f55555e7a24fdde33707479ed4945/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:18:17-127
+208                android:value="com.google.firebase.components.ComponentRegistrar" />
+208-->[com.google.firebase:firebase-installations:17.1.3] /home/marko/.gradle/caches/transforms-3/965f55555e7a24fdde33707479ed4945/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:19:17-82
+209        </service>
+210        <service
+210-->[:geolocator_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:10:9-14:56
+211            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+211-->[:geolocator_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-77
+212            android:enabled="true"
+212-->[:geolocator_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-35
+213            android:exported="false"
+213-->[:geolocator_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+214            android:foregroundServiceType="location" />
+214-->[:geolocator_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:14:13-53
+215
+216        <activity
+216-->[:url_launcher_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+217            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+217-->[:url_launcher_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+218            android:exported="false"
+218-->[:url_launcher_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+219            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+219-->[:url_launcher_android] /home/marko/clients/hunt-mx/dev/mobileapp/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+220        <!--
+221           Declares a provider which allows us to store files to share in
+222           '.../caches/share_plus' and grant the receiving action access
+223        -->
+224        <provider
+224-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:13:9-21:20
+225            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+225-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:14:13-77
+226            android:authorities="com.paradigmmex.paradigm_mex.flutter.share_provider"
+226-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:15:13-74
+227            android:exported="false"
+227-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:16:13-37
+228            android:grantUriPermissions="true" >
+228-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:17:13-47
+229            <meta-data
+229-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:18:13-20:68
+230                android:name="android.support.FILE_PROVIDER_PATHS"
+230-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:19:17-67
+231                android:resource="@xml/flutter_share_file_paths" />
+231-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:20:17-65
+232        </provider>
+233        <!--
+234           This manifest declared broadcast receiver allows us to use an explicit
+235           Intent when creating a PendingItent to be informed of the user's choice
+236        -->
+237        <receiver
+237-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:26:9-32:20
+238            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+238-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:27:13-82
+239            android:exported="false" >
+239-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:28:13-37
+240            <intent-filter>
+240-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:29:13-31:29
+241                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+241-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:30:17-65
+241-->[:share_plus] /home/marko/clients/hunt-mx/dev/mobileapp/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:30:25-62
+242            </intent-filter>
+243        </receiver>
+244
+245        <service
+245-->[:location] /home/marko/clients/hunt-mx/dev/mobileapp/build/location/intermediates/library_manifest/release/AndroidManifest.xml:11:9-15:56
+246            android:name="com.lyokone.location.FlutterLocationService"
+246-->[:location] /home/marko/clients/hunt-mx/dev/mobileapp/build/location/intermediates/library_manifest/release/AndroidManifest.xml:12:13-71
+247            android:enabled="true"
+247-->[:location] /home/marko/clients/hunt-mx/dev/mobileapp/build/location/intermediates/library_manifest/release/AndroidManifest.xml:13:13-35
+248            android:exported="false"
+248-->[:location] /home/marko/clients/hunt-mx/dev/mobileapp/build/location/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
+249            android:foregroundServiceType="location" />
+249-->[:location] /home/marko/clients/hunt-mx/dev/mobileapp/build/location/intermediates/library_manifest/release/AndroidManifest.xml:15:13-53
+250
+251        <activity
+251-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:29:9-46:20
+252            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+252-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:30:13-80
+253            android:excludeFromRecents="true"
+253-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:31:13-46
+254            android:exported="true"
+254-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:32:13-36
+255            android:launchMode="singleTask"
+255-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:33:13-44
+256            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+256-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:34:13-72
+257            <intent-filter>
+257-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:35:13-45:29
+258                <action android:name="android.intent.action.VIEW" />
+258-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:13-65
+258-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:21-62
+259
+260                <category android:name="android.intent.category.DEFAULT" />
+260-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:17-76
+260-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:27-73
+261                <category android:name="android.intent.category.BROWSABLE" />
+261-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:17-78
+261-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:27-75
+262
+263                <data
+263-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+264                    android:host="firebase.auth"
+264-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:86:21-55
+265                    android:path="/"
+265-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:87:21-45
+266                    android:scheme="genericidp" />
+266-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+267            </intent-filter>
+268        </activity>
+269        <activity
+269-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:47:9-64:20
+270            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+270-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:48:13-79
+271            android:excludeFromRecents="true"
+271-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:49:13-46
+272            android:exported="true"
+272-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:50:13-36
+273            android:launchMode="singleTask"
+273-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:51:13-44
+274            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+274-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:52:13-72
+275            <intent-filter>
+275-->[com.google.firebase:firebase-auth:22.0.0] /home/marko/.gradle/caches/transforms-3/e43adc7ee543ac01a350aa6b4a6d347e/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:53:13-63:29
+276                <action android:name="android.intent.action.VIEW" />
+276-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:13-65
+276-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:20:21-62
+277
+278                <category android:name="android.intent.category.DEFAULT" />
+278-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:17-76
+278-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:81:27-73
+279                <category android:name="android.intent.category.BROWSABLE" />
+279-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:17-78
+279-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:82:27-75
+280
+281                <data
+281-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:13-44
+282                    android:host="firebase.auth"
+282-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:86:21-55
+283                    android:path="/"
+283-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:87:21-45
+284                    android:scheme="recaptcha" />
+284-->/home/marko/clients/hunt-mx/dev/mobileapp/android/app/src/main/AndroidManifest.xml:21:19-41
+285            </intent-filter>
+286        </activity>
+287
+288        <uses-library
+288-->[androidx.window:window:1.0.0-beta04] /home/marko/.gradle/caches/transforms-3/ee88ef681ae1e848006708362f434525/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+289            android:name="androidx.window.extensions"
+289-->[androidx.window:window:1.0.0-beta04] /home/marko/.gradle/caches/transforms-3/ee88ef681ae1e848006708362f434525/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+290            android:required="false" />
+290-->[androidx.window:window:1.0.0-beta04] /home/marko/.gradle/caches/transforms-3/ee88ef681ae1e848006708362f434525/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+291        <uses-library
+291-->[androidx.window:window:1.0.0-beta04] /home/marko/.gradle/caches/transforms-3/ee88ef681ae1e848006708362f434525/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+292            android:name="androidx.window.sidecar"
+292-->[androidx.window:window:1.0.0-beta04] /home/marko/.gradle/caches/transforms-3/ee88ef681ae1e848006708362f434525/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+293            android:required="false" />
+293-->[androidx.window:window:1.0.0-beta04] /home/marko/.gradle/caches/transforms-3/ee88ef681ae1e848006708362f434525/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+294
+295        <provider
+295-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
+296            android:name="com.google.firebase.provider.FirebaseInitProvider"
+296-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:26:13-77
+297            android:authorities="com.paradigmmex.paradigm_mex.firebaseinitprovider"
+297-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:27:13-72
+298            android:directBootAware="true"
+298-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:28:13-43
+299            android:exported="false"
+299-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:29:13-37
+300            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+300-->[com.google.firebase:firebase-common:20.3.2] /home/marko/.gradle/caches/transforms-3/e06279d830d86872ca33515edbe4c8c9/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:30:13-36
+301        <uses-library
+301-->[com.google.android.gms:play-services-maps:18.1.0] /home/marko/.gradle/caches/transforms-3/37e485d5cb9464fbcfa9d4cf10302f4f/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+302            android:name="org.apache.http.legacy"
+302-->[com.google.android.gms:play-services-maps:18.1.0] /home/marko/.gradle/caches/transforms-3/37e485d5cb9464fbcfa9d4cf10302f4f/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+303            android:required="false" />
+303-->[com.google.android.gms:play-services-maps:18.1.0] /home/marko/.gradle/caches/transforms-3/37e485d5cb9464fbcfa9d4cf10302f4f/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+304
+305        <activity
+305-->[com.google.android.gms:play-services-base:18.1.0] /home/marko/.gradle/caches/transforms-3/92642ee7bd8de9a4963ed9018f95a050/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+306            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+306-->[com.google.android.gms:play-services-base:18.1.0] /home/marko/.gradle/caches/transforms-3/92642ee7bd8de9a4963ed9018f95a050/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+307            android:exported="false"
+307-->[com.google.android.gms:play-services-base:18.1.0] /home/marko/.gradle/caches/transforms-3/92642ee7bd8de9a4963ed9018f95a050/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+308            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+308-->[com.google.android.gms:play-services-base:18.1.0] /home/marko/.gradle/caches/transforms-3/92642ee7bd8de9a4963ed9018f95a050/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+309
+310        <receiver
+310-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:29:9-33:20
+311            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+311-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:30:13-85
+312            android:enabled="true"
+312-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:31:13-35
+313            android:exported="false" >
+313-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:32:13-37
+314        </receiver>
+315
+316        <service
+316-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:35:9-38:40
+317            android:name="com.google.android.gms.measurement.AppMeasurementService"
+317-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:36:13-84
+318            android:enabled="true"
+318-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:37:13-35
+319            android:exported="false" />
+319-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:38:13-37
+320        <service
+320-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:39:9-43:72
+321            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+321-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:40:13-87
+322            android:enabled="true"
+322-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:41:13-35
+323            android:exported="false"
+323-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:42:13-37
+324            android:permission="android.permission.BIND_JOB_SERVICE" />
+324-->[com.google.android.gms:play-services-measurement:21.2.2] /home/marko/.gradle/caches/transforms-3/47cfbde7e94855a7c764061ac33af004/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:43:13-69
+325
+326        <meta-data
+326-->[com.google.android.gms:play-services-basement:18.1.0] /home/marko/.gradle/caches/transforms-3/133844e687ed3497a6cb23fcc7596273/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+327            android:name="com.google.android.gms.version"
+327-->[com.google.android.gms:play-services-basement:18.1.0] /home/marko/.gradle/caches/transforms-3/133844e687ed3497a6cb23fcc7596273/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+328            android:value="@integer/google_play_services_version" />
+328-->[com.google.android.gms:play-services-basement:18.1.0] /home/marko/.gradle/caches/transforms-3/133844e687ed3497a6cb23fcc7596273/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+329    </application>
+330
+331</manifest>

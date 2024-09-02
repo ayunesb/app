@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.paradigmmex.paradigm_mex",
+      "sha256_cert_fingerprints":
+      ["B9:B2:82:21:04:A2:B2:23:0A:4C:99:9F:9B:CA:3B:06:01:3F:D6:4F:06:FB:2C:18:50:4A:1B:5B:FA:98:FF:E9"]
+    }
+  }
+]

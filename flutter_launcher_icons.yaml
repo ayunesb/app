@@ -1,0 +1,7 @@
+flutter_icons:
+  #  image_path: "assets/images/icon-128x128.png"
+  image_path: "assets/images/icon.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#3c6165" # only available for Android 8.0 devices and above
